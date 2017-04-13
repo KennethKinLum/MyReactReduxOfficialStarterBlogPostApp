@@ -3,6 +3,8 @@ import { Route, IndexRoute } from "react-router-dom";
 
 import App from "./App";
 import PostsIndex from "./components/posts-index";
+import PostsShow from "./components/posts-show";
+
 // import PostsNew from "./components/posts-new";
 // import PostsShow from "./components/posts-show"
 
@@ -23,6 +25,7 @@ export default (
 
   <App>
       <Route exact={true} path="/" component={PostsIndex} />
+      <Route path="/posts/:id" component={PostsShow} />
       <Route path="/greet" component={Greeting} />
       <Route path="/greet2" component={Greeting2} />
   </App>
