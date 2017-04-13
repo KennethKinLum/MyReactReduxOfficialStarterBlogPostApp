@@ -12,6 +12,19 @@ import PostsIndex from "./components/posts-index";
 //   );
 // };
 
+const Greeting = () => {
+  return <div>Greeting</div>;
+}
+const Greeting2 = () => {
+  return <div>Greeting2</div>;
+}
+
 export default (
-  <Route exact path="/" component={App} />
+
+  <App>
+      <Route exact={true} path="/" component={PostsIndex} />
+      <Route path="/greet" component={Greeting} />
+      <Route path="/greet2" component={Greeting2} />
+  </App>
+
 );

@@ -8,7 +8,7 @@ class App extends Component {
     return (
       <div>
         <h1>Welcome to the Blog App</h1>
-        <PostsIndex />
+          {this.props.children}
       </div>
     );
   }
