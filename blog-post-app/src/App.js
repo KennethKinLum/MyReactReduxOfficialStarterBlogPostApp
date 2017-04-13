@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import PostsIndex from "./containers/posts-index";
+import PostsIndex from "./components/posts-index";
 
 class App extends Component {
   render() {

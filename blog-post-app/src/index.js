@@ -9,7 +9,7 @@ import reducers from "./reducers/index";
 // import reducers from './reducers';
 
 import App from './App';
-import PostsIndex from "./containers/posts-index";
+import PostsIndex from "./components/posts-index";
 import './index.css';
 
 // ReactDOM.render(

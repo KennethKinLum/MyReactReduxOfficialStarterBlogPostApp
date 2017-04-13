@@ -2,7 +2,7 @@ import React from "react";
 import { Route, IndexRoute } from "react-router-dom";
 
 import App from "./App";
-import PostsIndex from "./containers/posts-index";
+import PostsIndex from "./components/posts-index";
 // import PostsNew from "./components/posts-new";
 // import PostsShow from "./components/posts-show"
 
