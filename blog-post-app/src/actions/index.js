@@ -33,3 +33,12 @@ export function clearPost() {
     payload: null
   }
 }
+
+export function deletePost(id) {
+  const request = axios.delete(`${ROOT_URL}/posts/${id}&${API_KEY}`);
+
+  return {
+    type: DELETE_POST,
+    payload: request
+  }
+}

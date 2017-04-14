@@ -20,7 +20,7 @@ class PostsIndex extends Component {
         <li key={post.id} className="list-group-item">
           <Link to={`/posts/${post.id}`}>
             <span>{post.title}</span>
-            <span className="float-sm-right">
+            <span className="text-sm-right">
               {post.categories}
             </span>
           </Link>
@@ -37,9 +37,15 @@ class PostsIndex extends Component {
     }
 
     return (
-      <ul className="list-group">
-        {this.allPosts()}
-      </ul>
+      <div>
+        <div className="text-sm-right">
+          <Link to="/posts/new" className="btn btn-primary">Add Post</Link>
+        </div>
+        <h3>List of blog posts</h3>
+        <ul className="list-group">
+          {this.allPosts()}
+        </ul>
+      </div>
     );
   }
 

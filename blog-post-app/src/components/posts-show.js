@@ -1,4 +1,4 @@
-import React, { Component, PropTypes } from "react";
+import React, { Component } from "react";
 import { connect } from "react-redux";
 import { fetchPost, deletePost, clearPost } from "../actions/index";
 import { Link } from "react-router-dom";
@@ -14,16 +14,16 @@ class PostsShow extends Component {
     this.props.clearPost();
   }
 
-  static contextTypes = {
-    router: PropTypes.object
-  }
+  // static contextTypes = {
+  //   router: PropTypes.object
+  // }
 
   handleUserDelete() {
     this.props.deletePost(this.props.match.params.id)
       .then(() => {
-        // the post has been created successfully
+        // the post has been deleted successfully
         // now route back to index
-        this.context.router.push("/");
+        this.props.history.push("/");
       });
   }
 

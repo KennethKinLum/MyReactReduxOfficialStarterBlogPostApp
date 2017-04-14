@@ -23,11 +23,8 @@ const Greeting2 = () => {
 
 export default (
 
-  <App>
-      <Route exact={true} path="/" component={PostsIndex} />
-      <Route path="/posts/:id" component={PostsShow} />
-      <Route path="/greet" component={Greeting} />
-      <Route path="/greet2" component={Greeting2} />
-  </App>
+<div>
+
+</div>
 
 );
